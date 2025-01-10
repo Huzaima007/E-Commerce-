@@ -1,0 +1,27 @@
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+    }
+  
+    .content {
+      max-width: 100%;
+    }
+  
+    .image {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 40px;
+    }
+  
+    .shop-now {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
