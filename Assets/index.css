@@ -1,0 +1,64 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .content h4 {
+    color: #999;
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .content h1 {
+    font-size: 40px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now {
+    background-color: #008c7e;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now:hover {
+    background-color: #006f63;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+
+  
