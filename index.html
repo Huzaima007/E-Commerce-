@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comforty</title>
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="stylesheet" href="./Assets/index.css">
-    <link rel="stylesheet" href="./Assets/media-q.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="./Assets/index.css" />
+    <link rel="stylesheet" href="./Assets/media-q.css" />
+  </head>
+  <body>
+    <!-- Header Section  -->
     <header class="header">
-        <div class="content">
-          <h4>WELCOME TO CHAIRY</h4>
-          <h1>Best Furniture Collection For Your Interior.</h1>
-          <button class="shop-now">Shop Now →</button>
+      <div class="content">
+        <h4>WELCOME TO CHAIRY</h4>
+        <h1>Best Furniture Collection For Your Interior.</h1>
+        <button class="shop-now">Shop Now →</button>
+      </div>
+      <div class="image">
+        <img src="./Assets/Images/black chair.png" alt="Chair" />
+      </div>
+    </header>
+
+    <!-- Featured Products Section  -->
+
+    <section class="featured-products">
+      <h1>Featured Products</h1>
+      <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="badge new">New</div>
+          <img
+            src="./Assets/Images/Featured products 1.png"
+            alt="Library Stool Chair"
+          />
+          <h2>Library Stool Chair</h2>
+          <p>$20</p>
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
         </div>
-        <div class="image">
-          <img src="./Assets/Images/black chair.png" alt="Chair">
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="badge sales">Sales</div>
+          <img
+            src="./Assets/Images/Featured products 2.png"
+            alt="Library Stool Chair"
+          />
+          <h2>Library Stool Chair</h2>
+          <p><span class="old-price">$30</span> $20</p>
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
         </div>
-      </header>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img
+            src="./Assets/Images/Featured products 3.png"
+            alt="Library Stool Chair"
+          />
+          <h2>Library Stool Chair</h2>
+          <p>$20</p>
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img
+            src="./Assets/Images/Featured products 4.png"
+            alt="Library Stool Chair"
+          />
+          <h2>Library Stool Chair</h2>
+          <p>$20</p>
+          <button class="add-to-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </section>
     <script src="./Assets/index.js"></script>
-</body>
+  </body>
 </html>
