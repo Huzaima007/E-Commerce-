@@ -1,5 +1,5 @@
-  /* Responsive Design */
-  @media (max-width: 768px) {
+ /* Header Section */
+   @media (max-width: 768px) {
     header {
       flex-direction: column;
       text-align: center;
@@ -23,5 +23,18 @@
     .shop-now {
       padding: 10px 15px;
       font-size: 14px;
+    }
+  }
+
+
+  /* Featured Products section */
+
+  @media (max-width: 768px) {
+    .featured-products h1 {
+      font-size: 1.5rem;
+    }
+  
+    .product-card {
+      padding: 10px;
     }
   }
