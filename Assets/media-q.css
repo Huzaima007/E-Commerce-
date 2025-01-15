@@ -38,3 +38,20 @@
       padding: 10px;
     }
   }
+
+
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .image img {
+      margin: 20px 0;
+    }
+  }
+
