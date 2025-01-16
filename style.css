@@ -1,0 +1,85 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.nav-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F2F3;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.image {
+    margin-left: 7%;
+
+}
+
+.cart {
+    margin-right: 7%;
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #636270;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 0px 0px #E1E3E5;
+    cursor: pointer;
+    padding: 25px;
+}
+
+.items {
+    color: #007580;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+    gap: 35px;
+    font-size: 20px;
+    font-weight: 500;
+
+
+}
+
+span {
+    color: #636270;
+}
+
+.number {
+    color: black;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:640px) {
+    div img {
+        width: 100px;
+        margin-left: 0%;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .nav-items {
+        padding: 5%;
+    }
+
+    .number {
+        display: none;
+    }
+}
