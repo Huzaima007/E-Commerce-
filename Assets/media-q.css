@@ -1,63 +1,77 @@
- /* Header Section */
-   @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      text-align: center;
-      height: auto;
-    }
-  
-    .content {
-      max-width: 100%;
-    }
-  
-    .image {
-      margin-top: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .content h1 {
-      font-size: 40px;
-    }
-  
-    .shop-now {
-      padding: 10px 15px;
-      font-size: 14px;
-    }
+/* Header Section */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    height: auto;
   }
 
-
-  /* Featured Products section */
-
-  @media (max-width: 768px) {
-    .featured-products h1 {
-      font-size: 1.5rem;
-    }
-  
-    .product-card {
-      padding: 10px;
-    }
+  .content h1 {
+    font-size: 1.5rem; /* Smaller font for better fit */
+    line-height: 1.2;
   }
 
- /* Navbar Section  */
-  @media screen and (max-width:640px) {
-    div img {
-        width: 100px;
-        margin-left: 0%;
-    }
-  
-    .nav-bar {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 16px;
-        gap: 15px;
-    }
-  
-    .nav-items {
-        padding: 5%;
-    }
-  
-    .number {
-        display: none;
-    }
+  .content {
+    max-width: 100%;
+    padding: 0 10px; /* Add some padding for better spacing */
+    text-align: center;
   }
+
+  .images {
+    margin-top: 15px;
+  }
+
+  .images img {
+    width: 90%; /* Ensure images are responsive */
+    margin: 15px auto;
+    display: block;
+  }
+
+  .shop-now {
+    padding: 8px 12px; /* Reduce padding */
+    font-size: 12px;
+  }
+}
+
+/* Featured Products Section */
+@media (max-width: 480px) {
+  .featured-products h1 {
+    font-size: 1.2rem; /* Smaller headline */
+    text-align: center;
+  }
+
+  .product-card {
+    padding: 5px;
+    margin: 10px auto; /* Center cards */
+    width: 90%;
+  }
+}
+
+/* Navbar Section */
+@media screen and (max-width: 480px) {
+  div img {
+    width: 80px; /* Smaller logo */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px; /* Smaller font size */
+    gap: 10px; /* Less gap between items */
+    justify-content: center; /* Center items */
+  }
+
+  .nav-items {
+    padding: 3%; /* Reduce padding */
+    text-align: center;
+    flex: 1 1 100%; /* Make nav items stack vertically */
+  }
+
+  .number {
+    display: none;
+  }
+}
