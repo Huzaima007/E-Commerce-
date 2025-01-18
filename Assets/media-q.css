@@ -49,30 +49,44 @@
 }
 
 /* Navbar Section */
-@media screen and (max-width: 480px) {
-  div img {
-    width: 80px; /* Smaller logo */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+@media (max-width: 768px) {
+  .nav-area {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 14px; /* Smaller font size */
-    gap: 10px; /* Less gap between items */
-    justify-content: center; /* Center items */
+  .image {
+    margin: 0 auto;
   }
 
   .nav-items {
-    padding: 3%; /* Reduce padding */
-    text-align: center;
-    flex: 1 1 100%; /* Make nav items stack vertically */
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  .nav-items.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+    align-items: flex-start;
   }
 
   .number {
-    display: none;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
   }
 }
 
