@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Global Reset and Defaults */
 * {
   margin: 0;
   padding: 0;
@@ -55,29 +54,7 @@ body {
   cursor: pointer;
 }
 
-.cart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: #3C3A4B;
-  padding: 10px 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-  cursor: pointer;
-}
 
-.cart i {
-  font-size: 20px;
-  margin-right: 8px;
-}
-
-.cart:hover {
-  transform: scale(1.05);
-}
 
 .number {
   font-size: 18px;
@@ -341,3 +318,95 @@ header h1 {
 }
 
 
+/* Contact Us Section  */
+
+
+.contact-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact-subheading {
+  font-size: 1rem;
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+.info-icon {
+  font-size: 1.5rem;
+  color: #00bfa6;
+}
+.form-control {
+  border-radius: 5px;
+  height: calc(2.75rem + 2px);
+}
+.btn-submit {
+  background-color: #00bfa6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.btn-submit:hover {
+  background-color: #008f7a;
+}
+
+
+
+
+
+/* About Us Section  */
+
+.about-section {
+  background-color: #005f63;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.btn-collection {
+  background-color: #00bfa6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.btn-collection:hover {
+  background-color: #008f7a;
+}
+.feature-icon {
+  font-size: 2rem;
+  color: #005f63;
+  margin-bottom: 10px;
+}
+.feature-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+.feature-card h5 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.feature-card p {
+  font-size: 0.9rem;
+  color: gray;
+}
