@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Navbar Section */
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #636270;
+  box-shadow: 0px 1px 0px 0px #E1E3E5;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.image {
+  margin-left: 7%;
+}
+
+.image img {
+  max-width: 150px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7%;
+  gap: 35px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.items {
+  color: #007580;
+  cursor: pointer;
+}
+
+
+
+.number {
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hamburger i {
+  color: #007580;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content h4 {
+  color: #999;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.shop-now {
+  background-color: #008c7e;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shop-now:hover {
+  background-color: #006f63;
+  color: #eaeaea;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 700px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Featured Products Section */
+.featured-products {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.featured-products h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Product Grid */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-cards {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.product-cards img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-cards h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-cards p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-cards .old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+/* Badge Styling */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff6347;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.badge.new {
+  background: #2ecc71;
+}
+
+.badge.sales {
+  background: #e67e22;
+}
+
+/* Add-to-Cart Button */
+.add-to-cart {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: white;
+  background: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #2980b9;
+}
+
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+.navbar {
+  box-shadow: 0px 1px 0px 0px #E1E3E5;
+}
+
+.navbar-brand img {
+  max-width: 150px;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+header h4 {
+  color: #999;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.btn-success {
+  background-color: #008c7e;
+}
+
+.btn-success:hover {
+  background-color: #006f63;
+}
+
+/* Featured Products */
+.featured-products h1 {
+  font-size: 2rem;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.badge {
+  background-color: #2ecc71;
+  color: white;
+}
+
+
+
+/* Single Product Page */
+
+.product-card {
+  background-color: #fff;
+}
+
+.image-container {
+  background: #ffe6e6;
+  padding: 20px;
+}
+
+.image-container img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.product-details h2 {
+  color: #333;
+}
+
+.product-details .price {
+  color: #00bfa6;
+}
+
+.product-details .description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-details .btn {
+  background-color: #00bfa6;
+  border: none;
+}
+
+.product-details .btn:hover {
+  background-color: #008f7a;
+}
+
+
+/* Contact Us Section  */
+
+
+.contact-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact-subheading {
+  font-size: 1rem;
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+.info-icon {
+  font-size: 1.5rem;
+  color: #00bfa6;
+}
+.form-control {
+  border-radius: 5px;
+  height: calc(2.75rem + 2px);
+}
+.btn-submit {
+  background-color: #00bfa6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.btn-submit:hover {
+  background-color: #008f7a;
+}
+
+
+
+
+
+/* About Us Section  */
+
+.about-section {
+  background-color: #005f63;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.btn-collection {
+  background-color: #00bfa6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.btn-collection:hover {
+  background-color: #008f7a;
+}
+.feature-icon {
+  font-size: 2rem;
+  color: #005f63;
+  margin-bottom: 10px;
+}
+.feature-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+.feature-card h5 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.feature-card p {
+  font-size: 0.9rem;
+  color: gray;
+}
