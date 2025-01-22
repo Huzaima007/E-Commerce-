@@ -562,7 +562,6 @@ header h1 {
 }
 
 .custom-input {
-  padding: 7px;
   border-radius: 6px;
   border: 1px solid rgb(194, 171, 171);
 }
@@ -570,22 +569,21 @@ header h1 {
 .custom-button {
   background-color: #007A7A;
   color: white;
-  padding: 8px 12px;
   border-radius: 5px;
   border: 0;
 }
 
 .custom-button:hover {
-  color: #007580;
+  color: #007A7A;
 }
 
 .custom-items {
   font-size: 16px;
-  color: black;
+  color: #007A7A;
 }
 
 .custom-items:hover {
-  color: #007580;
+  color: #007A7A;
 }
 
 .text-decoration-none {
