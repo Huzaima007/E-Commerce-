@@ -70,6 +70,10 @@ body {
   color: #007580;
 }
 
+.atc{
+  
+}
+
 /* Header Section */
 header {
   display: flex;
@@ -411,194 +415,93 @@ header h1 {
   color: gray;
 }
 
-
-/* Product-Section */
-div p {
-  margin-left: 5%;
-  margin-top: 3%;
-  color: #272343;
-  font-size: 32px;
-  font-weight: 600;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 3%;
-  position: relative;
-}
+/* Products  */
 
 .head {
   position: absolute;
   top: 10px;
-  left: 70px;
+  left: 15px;
   font-size: 14px;
   font-weight: 500;
   color: white;
-  background-color: #01AD5A;
+  background-color: #01ad5a;
   padding: 7px;
   border-radius: 8px;
-
 }
 
 .text {
   font-size: 18px;
   font-weight: 400;
-  margin: 0%;
-  color: #007580;
+  margin: 0;
+  color: #555;
 }
 
 .text-2 {
-  margin: 0%;
+  margin: 0;
   font-size: 18px;
   color: rgb(34, 27, 27);
 }
 
+.All-products{
+  color: #555;
+
+}
 /* Footer */
-.footer {
-  margin-top: 4%;
+.custom-footer {
   color: black;
-  align-items: center;
   cursor: pointer;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  gap: 10%;
-  margin-left: 10%;
+.custom-icons-img img {
+  width: 20px;
+  margin: 5px;
 }
 
-.footer-column h4 {
-  font-size: 20px;
-  color: #636270;
-}
-
-
-.icons-img img {
-  width: 15px;
-  margin: 10px;
-}
-
-.footer-column ul {
-  list-style: none;
-}
-
-.footer-column ul li {
-  margin: 6px 0;
-}
-
-.footer-column ul li a {
-  text-decoration: none;
-}
-
-.text-3 {
+.custom-text-3 {
   font-size: 16px;
-  font-weight: 400;
   color: #636270;
-  margin: 0%;
 }
 
-input {
+.custom-input {
   padding: 7px;
   border-radius: 6px;
   border: 1px solid rgb(194, 171, 171);
 }
 
-button {
+.custom-button {
   background-color: #007580;
   color: white;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 5px;
   border: 0;
 }
 
-.text-4 {
-  font-size: 15px;
-  font-weight: 400;
-  margin: 0%;
-  margin-top: 15px;
+.custom-items {
+  font-size: 16px;
+  color: black;
 }
 
-/* Responsive-Part */
-
-@media screen and (max-width:640px) {
-  div img {
-      width: 100px;
-      margin-left: 0%;
-  }
-
-  .nav-bar {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 16px;
-      gap: 15px;
-  }
-
-  .nav-items {
-      padding: 5%;
-  }
-
-  .number {
-      display: none;
-  }
-
-  div p {
-      font-size: 20px;
-      font-weight: 600;
-  }
-
-  .cards {
-      text-align: center;
-  }
-
-  .card img {
-      width: 230px;
-  }
-
-  .head {
-      top: 10px;
-      left: 80px;
-      padding: 4px;
-      border-radius: 3px;
-  }
-
-  .text-2 {
-      font-size: 16px;
-  }
-
-  .text {
-      font-size: 16px;
-  }
-
-  .footer-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .footer-column h4 {
-      font-size: 18px;
-      font-weight: 600;
-  }
-
-  .list {
-      text-align: center;
-  }
-
-  .text-3 {
-      font-size: 12px;
-  }
-
-  .text-4 {
-      font-size: 15px;
-  }
-
-  .icons-img img {
-      width: 21px;
-
-  }
-
-
+.custom-items:hover {
+  color: #007580;
 }
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 640px) {
+  .custom-footer {
+    text-align: center;
+  }
+
+  .custom-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .custom-button {
+    width: 100%;
+  }
+}
+
