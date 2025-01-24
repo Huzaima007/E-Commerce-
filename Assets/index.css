@@ -575,6 +575,7 @@ header h1 {
 
 .custom-button:hover {
   color: #007A7A;
+  background-color: white;
 }
 
 .custom-items {
@@ -588,6 +589,10 @@ header h1 {
 
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+.button-container {
+  width: 100%;
 }
 
 /* Responsive Footer */
