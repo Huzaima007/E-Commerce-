@@ -615,7 +615,7 @@ header h1 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #28a745;
+  background-color: #007A7A;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -630,3 +630,30 @@ header h1 {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+/* Cart Page  */
+
+.cart-item {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.summary {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-checkout {
+  width: 100%;
+  background-color: #007A7A;
+  color: white;
+}
+.btn-checkout:hover {
+  background-color: #007A7A;
+}
+
