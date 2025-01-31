@@ -59,3 +59,88 @@ document.querySelectorAll(".atcm").forEach((button) => {
 });
 
 updateCartCount();
+
+function renderCartItems() {
+  const cartItemsContainer = document.getElementById("cart-items");
+  const totalElement = document.getElementById("total");
+  const subtotalElement = document.getElementById("subtotal");
+
+  const cart = getLocalStorageData("cart");
+  cartItemsContainer.innerHTML = "";
+
+  if (cart.length === 0) {
+    totalElement.innerText = "$0.00";
+    subtotalElement.innerText = "$0.00";
+    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    return;
+  }
+  let subtotal = 0;
+  cart.forEach((item, index) => {
+    const { price, quantity } = item;
+    subtotal += price * quantity;
+
+    const cartItem = document.createElement("div");
+    cartItem.className = "cart-item d-flex align-items-center mb-3";
+    cartItem.innerHTML = `
+      <img
+        src="${item.image}"
+        alt="${item.name}"
+        class="img-fluid me-3"
+        style="width: 100px; height: auto"
+      />
+      <div class="flex-grow-1">
+        <h5>${item.name}</h5>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-outline-secondary btn-sm minus-btn" data-index="${index}">-</button>
+          <p class="mb-0 mx-2 quantity">${item.quantity}</p>
+          <button class="btn btn-outline-secondary btn-sm plus-btn" data-index="${index}">+</button>
+        </div>
+      </div>
+      <p class="mb-0 me-3 price">MRP: $${item.price}</p>
+      <button class="btn btn-outline-danger btn-sm delete-btn" data-index="${index}">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+    `;
+    cartItemsContainer.appendChild(cartItem);
+  });
+
+  totalElement.innerText = `$${subtotal.toFixed(2)}`;
+  subtotalElement.innerText = `$${subtotal.toFixed(2)}`;
+
+  updateCartCount();
+  attachEventListeners();
+}
+
+function attachEventListeners() {
+  document.querySelectorAll(".plus-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => updateQuantity(e, 1));
+  });
+
+  document.querySelectorAll(".minus-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => updateQuantity(e, -1));
+  });
+
+  document.querySelectorAll(".delete-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => deleteCartItem(e));
+  });
+}
+
+function updateQuantity(event, delta) {
+  const index = event.target.dataset.index;
+  const cart = getLocalStorageData("cart");
+  cart[index].quantity = Math.max(1, cart[index].quantity + delta); // Prevent going below 1
+  setLocalStorageData("cart", cart);
+  renderCartItems();
+}
+
+function deleteCartItem(event) {
+  const index = event.target.dataset.index;
+  let cart = getLocalStorageData("cart");
+  cart.splice(index, 1);
+  setLocalStorageData("cart", cart);
+  renderCartItems();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderCartItems();
+});
