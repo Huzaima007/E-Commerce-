@@ -14,6 +14,9 @@ body {
 }
 
 /* Navbar Section */
+
+
+
 .navbar-nav .nav-item {
   margin-top: 15px;
 }
@@ -258,26 +261,6 @@ header {
   text-decoration: line-through;
   color: #999;
   margin-right: 5px;
-}
-
-/* Badge Styling */
-.badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: #ff6347;
-  color: white;
-  padding: 5px 10px;
-  font-size: 0.8rem;
-  border-radius: 5px;
-}
-
-.badge.new {
-  background: #007A7A;
-}
-
-.badge.sales {
-  background: #e67e22;
 }
 
 /* Add-to-Cart Button */
