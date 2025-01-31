@@ -339,45 +339,6 @@ header h1 {
 
 
 
-/* Single Product Page */
-
-.product-card {
-  background-color: #fff;
-}
-
-.image-container {
-  background: #ffe6e6;
-  padding: 20px;
-}
-
-.image-container img {
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.product-details h2 {
-  color: #333;
-}
-
-.product-details .price {
-  color: #007A7A;
-}
-
-.product-details .description {
-  font-size: 1rem;
-  color: #555;
-}
-
-.product-details .btn {
-  background-color: #007A7A;
-  border: none;
-}
-
-.product-details .btn:hover {
-  background-color: #007A7A;
-}
-
-
 /* Contact Us Section  */
 
 
@@ -631,7 +592,7 @@ header h1 {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.btn-checkout {
+.checkout {
   width: 100%;
   background-color: #007A7A;
   color: white;
