@@ -153,14 +153,26 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("checkout-BTN").addEventListener("click", myFunction);
 
 
+// function myFunction() {
+//   removeLocalStorageData("cart")
+//   Swal.fire({
+//       title: "Congratulation",
+//       text: "Your order is created successfully",
+//       icon: "success"
+//   });
+//   window.location.href = "index.html"; 
+// }
+
+
 function myFunction() {
-  removeLocalStorageData("cart")
+  removeLocalStorageData("cart");
+
   Swal.fire({
-      title: "Congratulation",
-      text: "Your order is created successfully",
-      icon: "success"
+    title: "Congratulations",
+    text: "Your order is created successfully",
+    icon: "success"
+  }).then(() => {
+    // Redirect only after the user closes the alert
+    window.location.href = "index.html";
   });
-  window.location.href = "index.html"; 
 }
-
-
