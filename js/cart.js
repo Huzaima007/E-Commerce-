@@ -1,3 +1,12 @@
+// Navbar Toggle Menu Section
+
+function toggleMenu() {
+  const navItems = document.querySelector(".nav-items");
+  navItems.classList.toggle("active");
+}
+
+
+
 const setLocalStorageData = (key, data) => {
   return localStorage.setItem(key, JSON.stringify(data));
 };
@@ -11,6 +20,16 @@ const getLocalStorageData = (key) => {
 };
 
 let cart = getLocalStorageData("cart");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cartLink = document.getElementById("cart-link");
+
+  cartLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (!cart?.length) return;
+    window.location.href = "cart.html";
+  });
+});
 
 function updateCartCount() {
   const cartCount = document.getElementById("cart-count");
@@ -149,20 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCartItems();
 });
 
-
 document.getElementById("checkout-BTN").addEventListener("click", myFunction);
-
-
-// function myFunction() {
-//   removeLocalStorageData("cart")
-//   Swal.fire({
-//       title: "Congratulation",
-//       text: "Your order is created successfully",
-//       icon: "success"
-//   });
-//   window.location.href = "index.html"; 
-// }
-
 
 function myFunction() {
   removeLocalStorageData("cart");
@@ -170,9 +176,8 @@ function myFunction() {
   Swal.fire({
     title: "Congratulations",
     text: "Your order is created successfully",
-    icon: "success"
+    icon: "success",
   }).then(() => {
-    // Redirect only after the user closes the alert
     window.location.href = "index.html";
   });
 }
