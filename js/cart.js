@@ -163,8 +163,3 @@ function myFunction() {
 }
 
 
-// function homepage(key) {
-//   window.location.href = "index.html"; 
-// }
-
-// homepage();
