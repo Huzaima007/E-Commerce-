@@ -160,6 +160,7 @@ function myFunction() {
       text: "Your order is created successfully",
       icon: "success"
   });
+  window.location.href = "index.html"; 
 }
 
 
