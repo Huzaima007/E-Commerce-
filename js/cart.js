@@ -2,6 +2,10 @@ const setLocalStorageData = (key, data) => {
   return localStorage.setItem(key, JSON.stringify(data));
 };
 
+const removeLocalStorageData = (key) => {
+  return localStorage.removeItem(key);
+};
+
 const getLocalStorageData = (key) => {
   return JSON.parse(localStorage.getItem(key)) || [];
 };
@@ -144,3 +148,23 @@ function deleteCartItem(event) {
 document.addEventListener("DOMContentLoaded", () => {
   renderCartItems();
 });
+
+
+document.getElementById("checkout-BTN").addEventListener("click", myFunction);
+
+
+function myFunction() {
+  removeLocalStorageData("cart")
+  Swal.fire({
+      title: "Congratulation",
+      text: "Your order is created successfully",
+      icon: "success"
+  });
+}
+
+
+// function homepage(key) {
+//   window.location.href = "index.html"; 
+// }
+
+// homepage();
